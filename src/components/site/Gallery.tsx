@@ -40,8 +40,9 @@ export function Gallery({ lang }: { lang: Lang }) {
     };
   }, [open, rtl]);
 
-  const Tile = ({ it, i }: { it: Item; i: number }) => (
+  const tile = (it: Item, i: number) => (
     <button
+      key={it.key}
       onClick={() => setOpen(i)}
       className={`group reveal relative block overflow-hidden text-start ${it.span}`}
       aria-label={t.alts[it.key]}
@@ -62,13 +63,13 @@ export function Gallery({ lang }: { lang: Lang }) {
         <h2 className="font-display text-5xl leading-[1.05] md:col-span-8 md:text-7xl">{t.title}</h2>
       </div>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-12 md:gap-6">
-        {items.map((it, i) => <Tile key={it.key} it={it} i={i} />)}
+        {items.map((it, i) => tile(it, i))}
       </div>
 
       <div className="mt-24 bg-blush px-5 py-16 md:-mx-12 md:px-12">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-12 md:gap-6">
           <h3 className="col-span-2 font-display text-4xl italic text-blush-deep md:col-span-3 md:text-5xl">{t.flowers}</h3>
-          {flowers.map((it, j) => <Tile key={it.key} it={it} i={items.length + j} />)}
+          {flowers.map((it, j) => tile(it, items.length + j))}
         </div>
       </div>
 

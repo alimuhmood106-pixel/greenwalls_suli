@@ -97,7 +97,7 @@ function Nav({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void }) {
   return (
     <header className="absolute inset-x-0 top-0 z-40 flex items-center justify-between px-5 py-5 md:px-12">
       <a href="#top" className="flex items-center gap-2">
-        <img src={images.logo} alt="Greenwalls_suli" className="h-12 w-auto" />
+        <img src={images.logo} alt="Greenwalls_suli" className="h-16 w-auto" />
       </a>
       <nav className="hidden gap-8 text-sm md:flex">
         {(["about", "services", "work", "process", "contact"] as const).map((k) => (
