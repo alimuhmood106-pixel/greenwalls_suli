@@ -83,10 +83,10 @@ export function Gallery({ lang }: { lang: Lang }) {
         <div
           className="fixed inset-0 z-[70] flex items-center justify-center bg-forest/95 p-4"
           onClick={() => setOpen(null)}
-          onTouchStart={(e) => (touch.current = e.touches[0].clientX)}
+          onTouchStart={(e) => (touch.current = e.touches[0]!.clientX)}
           onTouchEnd={(e) => {
             if (touch.current === null) return;
-            const dx = e.changedTouches[0].clientX - touch.current;
+            const dx = e.changedTouches[0]!.clientX - touch.current;
             if (Math.abs(dx) > 50) go((dx < 0 ? 1 : -1) * (rtl ? -1 : 1));
             touch.current = null;
           }}
@@ -94,8 +94,8 @@ export function Gallery({ lang }: { lang: Lang }) {
           aria-modal
         >
           <img
-            src={images[all[open].key]}
-            alt={t.alts[all[open].key]}
+            src={images[all[open]!.key]}
+            alt={t.alts[all[open]!.key]}
             className="max-h-[88vh] max-w-full object-contain"
             onClick={(e) => e.stopPropagation()}
           />
