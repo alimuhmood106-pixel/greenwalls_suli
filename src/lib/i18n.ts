@@ -24,19 +24,18 @@ export const dict: Record<Lang, Dict> = {
   ckb: {
     nav: { about: "دەربارە", services: "خزمەتگوزاری", work: "کارەکانمان", process: "چۆن کار دەکەین", contact: "پەیوەندی" },
     hero: {
-      kicker: "سلێمانی · دیزاین و دانانی سەوزایی",
+      kicker: "سلێمانی",
       title: ["هەر دیوارێک", "دەتوانێت", "سەوز بێت."],
-      sub: "دیواری سەوز، دار و گوڵی دەستکرد بۆ ماڵ، دوکان، کافێ و ئۆفیس. بێ ئاودان، هەمیشە جوان.",
+      sub: "سەوزایی دەستکرد. بێ ئاودان.",
       cta: "نرخ لە واتسئاپ وەربگرە",
       secondary: "کارەکانمان ببینە",
       alt: "دیواری سەوزی دەستکرد لە بالکۆنێکی سلێمانی",
     },
     about: {
       label: "دەربارەی ئێمە",
-      title: "دوکانێکی بچووک، بە دەستێکی گەورە بۆ سەوزایی.",
+      title: "دوکانێکی بچووک لە سلێمانی.",
       body: [
-        "ئێمە لە سلێمانین و هەموو ڕۆژێک خەریکی ئەوەین شوێنەکان زیندوو بکەینەوە، بێ ئەوەی ئاو و چاودێری ڕۆژانە بوێت.",
-        "هەر پڕۆژەیەک بە دەست دیزاین دەکەین و خۆمان دایدەنێین. وەرە بۆ دوکانەکەمان، سەیری بکە و دەستی لێ بدە.",
+        "خۆمان دیزاین دەکەین و خۆمان دایدەنێین.",
       ],
       alt: "پێشەوەی دوکانی گرین وۆڵز لەگەڵ دوو داری دەستکردی بەرز",
       visit: "دوکانەکەمان",
@@ -45,11 +44,11 @@ export const dict: Record<Lang, Dict> = {
       label: "چی دەکەین",
       title: "لە دیوارێکەوە تا باخچەیەکی تەواو.",
       items: [
-        { t: "دیواری سەوز", d: "دیزاین و دانانی دیواری سەوزی دەستکرد، بۆ ناوەوە و دەرەوە." },
-        { t: "دار و ڕووەک", d: "داری بەرز، پاڵم و ڕووەکی دەستکرد کە ڕەنگیان ناچێت." },
-        { t: "باخچەی ناوماڵ", d: "باخچەی بچووک لە ژێر پەیژە، لە هۆڵ و لە گۆشەکانی ماڵدا." },
-        { t: "گوڵ و ڕازاندنەوەی بۆنە", d: "دیواری گوڵ و داری چرۆ بۆ دوکان، سالۆن و بۆنەکان." },
-        { t: "دیزاینی تایبەت", d: "شوێنەکەت پێمان بڵێ، بە پێی قەبارە و ستایلی تۆ دروستی دەکەین." },
+        { t: "دیواری سەوز", d: "ناوەوە و دەرەوە." },
+        { t: "دار و ڕووەک", d: "ڕەنگیان ناچێت." },
+        { t: "باخچەی ناوماڵ", d: "ژێر پەیژە و گۆشەکان." },
+        { t: "گوڵ و ڕازاندنەوەی بۆنە", d: "بۆ دوکان و بۆنەکان." },
+        { t: "دیزاینی تایبەت", d: "بە پێی شوێنەکەت." },
       ],
     },
     gallery: {
@@ -72,10 +71,10 @@ export const dict: Record<Lang, Dict> = {
       label: "چۆن کار دەکەین",
       title: "چوار هەنگاو، بێ سەرئێشە.",
       items: [
-        { t: "نامەمان بۆ بنێرە", d: "وێنەی شوێنەکە لە واتسئاپ بنێرە و بیرۆکەکەت بڵێ." },
-        { t: "دێین و دەپێوین", d: "دێینە شوێنەکەت و قەبارە و ڕووناکی دەبینین." },
-        { t: "دیزاینی دەکەین", d: "ڕەنگ و جۆری ڕووەکەکان پێکەوە هەڵدەبژێرین." },
-        { t: "دایدەنێین", d: "خۆمان دایدەنێین و شوێنەکە پاک بەجێ دەهێڵین." },
+        { t: "نامەمان بۆ بنێرە", d: "لە واتسئاپ." },
+        { t: "دێین و دەپێوین", d: "دێینە لات." },
+        { t: "دیزاینی دەکەین", d: "پێکەوە." },
+        { t: "دایدەنێین", d: "خێرا و پاک." },
       ],
     },
     contactS: {
@@ -91,19 +90,18 @@ export const dict: Record<Lang, Dict> = {
   ar: {
     nav: { about: "من نحن", services: "خدماتنا", work: "أعمالنا", process: "طريقة العمل", contact: "تواصل" },
     hero: {
-      kicker: "السليمانية · تصميم وتركيب المساحات الخضراء",
+      kicker: "السليمانية",
       title: ["كل جدار", "يستحق", "أن يكون أخضر."],
-      sub: "جدران خضراء وأشجار وزهور صناعية للبيوت والمحلات والمقاهي والمكاتب. بلا سقاية، وجميلة دائماً.",
+      sub: "خضرة صناعية. بلا سقاية.",
       cta: "اطلب السعر على واتساب",
       secondary: "شاهد أعمالنا",
       alt: "جدار أخضر صناعي في شرفة بالسليمانية",
     },
     about: {
       label: "من نحن",
-      title: "محل صغير، وحب كبير للخضرة.",
+      title: "محل صغير في السليمانية.",
       body: [
-        "نحن من السليمانية، وعملنا كل يوم أن نعيد الحياة للأماكن من دون ماء أو عناية يومية.",
-        "نصمم كل مشروع بأيدينا ونركّبه بأنفسنا. زورونا في المحل، شاهدوا والمسوا بأنفسكم.",
+        "نصمم ونركّب بأنفسنا.",
       ],
       alt: "واجهة محل غرين وولز مع شجرتين صناعيتين طويلتين",
       visit: "محلنا",
@@ -112,11 +110,11 @@ export const dict: Record<Lang, Dict> = {
       label: "ماذا نقدّم",
       title: "من جدار واحد إلى حديقة كاملة.",
       items: [
-        { t: "الجدران الخضراء", d: "تصميم وتركيب جدران خضراء صناعية للداخل والخارج." },
-        { t: "أشجار ونباتات", d: "أشجار طويلة ونخيل ونباتات صناعية لا يبهت لونها." },
-        { t: "حدائق داخلية", d: "حدائق صغيرة تحت الدرج وفي الصالات وزوايا البيت." },
-        { t: "زهور وديكور المناسبات", d: "جدران زهور وأشجار مزهرة للمحلات والصالونات والمناسبات." },
-        { t: "تصاميم خاصة", d: "أخبرنا عن مكانك، ونصنعه حسب المقاس والذوق." },
+        { t: "الجدران الخضراء", d: "للداخل والخارج." },
+        { t: "أشجار ونباتات", d: "لا يبهت لونها." },
+        { t: "حدائق داخلية", d: "تحت الدرج وفي الزوايا." },
+        { t: "زهور وديكور المناسبات", d: "للمحلات والمناسبات." },
+        { t: "تصاميم خاصة", d: "حسب مكانك." },
       ],
     },
     gallery: {
@@ -139,10 +137,10 @@ export const dict: Record<Lang, Dict> = {
       label: "طريقة العمل",
       title: "أربع خطوات، بلا تعب.",
       items: [
-        { t: "راسلنا", d: "أرسل صورة المكان على واتساب وأخبرنا بفكرتك." },
-        { t: "نزور ونقيس", d: "نأتي إلى مكانك ونرى المقاسات والإضاءة." },
-        { t: "نصمم", d: "نختار الألوان وأنواع النباتات معاً." },
-        { t: "نركّب", d: "نركّب بأنفسنا ونترك المكان نظيفاً." },
+        { t: "راسلنا", d: "على واتساب." },
+        { t: "نزور ونقيس", d: "نأتي إليك." },
+        { t: "نصمم", d: "معاً." },
+        { t: "نركّب", d: "بسرعة ونظافة." },
       ],
     },
     contactS: {
@@ -158,19 +156,18 @@ export const dict: Record<Lang, Dict> = {
   en: {
     nav: { about: "About", services: "Services", work: "Work", process: "Process", contact: "Contact" },
     hero: {
-      kicker: "Sulaymaniyah · Artificial greenery, designed & installed",
+      kicker: "Sulaymaniyah",
       title: ["Any wall", "can grow", "green."],
-      sub: "Green walls, trees and flowers for homes, shops, cafés and offices. No watering, always in season.",
+      sub: "Artificial greenery. No watering.",
       cta: "Get a quote on WhatsApp",
       secondary: "See our work",
       alt: "Artificial green wall on a balcony in Sulaymaniyah",
     },
     about: {
       label: "About us",
-      title: "A small shop with a big soft spot for green.",
+      title: "A small shop in Sulaymaniyah.",
       body: [
-        "We're based in Sulaymaniyah, and every day we bring rooms back to life — without the watering or the daily care.",
-        "Every project is designed by hand and installed by us. Drop by the shop, have a look, touch the leaves.",
+        "We design it. We install it.",
       ],
       alt: "Green Walls shop front with two tall artificial trees",
       visit: "Our shop",
@@ -179,11 +176,11 @@ export const dict: Record<Lang, Dict> = {
       label: "What we do",
       title: "From a single wall to a whole garden.",
       items: [
-        { t: "Green walls", d: "Design and installation of artificial green walls, inside and out." },
-        { t: "Trees & plants", d: "Tall trees, palms and plants that never fade." },
-        { t: "Indoor gardens", d: "Small gardens under stairs, in halls and quiet corners." },
-        { t: "Flowers & event decor", d: "Flower walls and blossom trees for shops, salons and occasions." },
-        { t: "Custom designs", d: "Tell us about your space — we build it to size and to taste." },
+        { t: "Green walls", d: "Inside and out." },
+        { t: "Trees & plants", d: "They never fade." },
+        { t: "Indoor gardens", d: "Under stairs, in corners." },
+        { t: "Flowers & event decor", d: "For shops and occasions." },
+        { t: "Custom designs", d: "Made for your space." },
       ],
     },
     gallery: {
@@ -206,10 +203,10 @@ export const dict: Record<Lang, Dict> = {
       label: "How it works",
       title: "Four steps, no fuss.",
       items: [
-        { t: "Message us", d: "Send a photo of your space on WhatsApp and tell us the idea." },
-        { t: "We visit & measure", d: "We come by and check the size and the light." },
-        { t: "We design", d: "We pick colours and plant types together." },
-        { t: "We install", d: "We install it ourselves and leave the place clean." },
+        { t: "Message us", d: "On WhatsApp." },
+        { t: "We visit & measure", d: "We come to you." },
+        { t: "We design", d: "Together." },
+        { t: "We install", d: "Quick and clean." },
       ],
     },
     contactS: {
