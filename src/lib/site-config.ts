@@ -21,16 +21,19 @@ export const contact = {
   mapLink: "https://www.google.com/maps/search/?api=1&query=H9CX%2B55+Sulaymaniyah",
 };
 
-/** Open Sat–Thu 13:00–22:00 Asia/Baghdad, Friday closed. */
+/** Open Sat–Thu 09:00–16:30 Asia/Baghdad, Friday closed. */
 export function isOpenAt(date: Date): boolean {
   const parts = new Intl.DateTimeFormat("en-US", {
     timeZone: "Asia/Baghdad",
     weekday: "short",
     hour: "numeric",
+    minute: "numeric",
     hourCycle: "h23",
   }).formatToParts(date);
   const wd = parts.find((p) => p.type === "weekday")?.value;
   const h = Number(parts.find((p) => p.type === "hour")?.value);
+  const m = Number(parts.find((p) => p.type === "minute")?.value);
   if (wd === "Fri") return false;
-  return h >= 13 && h < 22;
+  const mins = h * 60 + m;
+  return mins >= 9 * 60 && mins < 16 * 60 + 30;
 }
