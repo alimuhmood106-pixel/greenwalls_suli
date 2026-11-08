@@ -28,3 +28,5 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- Site copy for all languages lives in src/lib/i18n.ts and image URLs/contact info in src/lib/site-config.ts, so content swaps never touch layout code.
