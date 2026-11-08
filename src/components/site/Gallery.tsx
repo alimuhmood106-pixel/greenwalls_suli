@@ -6,7 +6,7 @@ import { dict } from "@/lib/i18n";
 
 type Item = { key: keyof typeof images; span: string; aspect: string; flower?: boolean };
 const items: Item[] = [
-  { key: "stairWide", span: "md:col-span-7 md:row-span-2", aspect: "aspect-[4/5]" },
+  { key: "stairWide", span: "md:col-span-7", aspect: "aspect-[4/5]" },
   { key: "corridor", span: "md:col-span-5", aspect: "aspect-[4/5]" },
   { key: "orchid", span: "md:col-span-3", aspect: "aspect-[3/4]" },
   { key: "stairBonsai", span: "md:col-span-2 md:mt-16", aspect: "aspect-[3/5]" },
@@ -46,7 +46,7 @@ export function Gallery({ lang }: { lang: Lang }) {
       className={`group reveal relative block overflow-hidden text-start ${it.span}`}
       aria-label={t.alts[it.key]}
     >
-      <div className={`mask-img overflow-hidden ${it.aspect} md:h-full`}>
+      <div className={`mask-img overflow-hidden ${it.aspect}`}>
         <img src={images[it.key]} alt={t.alts[it.key]} loading="lazy" className="zoom-img h-full w-full object-cover" />
       </div>
       <span className="pointer-events-none absolute bottom-3 start-3 text-xs tracking-wide text-forest-foreground opacity-0 transition-opacity group-hover:opacity-100">
