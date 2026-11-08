@@ -97,7 +97,7 @@ function Nav({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void }) {
   return (
     <header className="absolute inset-x-0 top-0 z-40 flex items-center justify-between px-5 py-5 md:px-12">
       <a href="#top" className="flex items-center gap-2">
-        <img src={images.logo} alt="Greenwalls_suli" className="h-16 w-auto" />
+        <img src={images.logo} alt="Greenwalls_suli" className="h-[4.8rem] w-auto" />
       </a>
       <nav className="hidden gap-8 text-sm md:flex">
         {(["about", "services", "work", "process", "contact"] as const).map((k) => (
@@ -298,7 +298,7 @@ function Footer({ lang }: { lang: Lang }) {
     <footer className="border-t border-foreground/20 px-5 py-14 md:px-12">
       <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
         <div>
-          <img src={images.logo} alt="Greenwalls_suli" loading="lazy" className="h-20 w-auto" />
+          <img src={images.logo} alt="Greenwalls_suli" loading="lazy" className="h-24 w-auto" />
           <p className="mt-4 flex items-center gap-2 font-display text-xl italic">
             <Leaf className="sway h-6 w-4 text-accent" /> {t.footer.line}
           </p>
