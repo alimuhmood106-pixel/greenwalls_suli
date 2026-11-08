@@ -1,24 +1,15 @@
 // All image paths live here so they are easy to replace later.
-import logo from "@/assets/images/logo.png.asset.json";
-import balcony from "@/assets/images/balcony-green-wall.jpg.asset.json";
-import storefront from "@/assets/images/storefront-trees.jpg.asset.json";
-import stairWide from "@/assets/images/stair-garden-wide.jpg.asset.json";
-import stairBonsai from "@/assets/images/stair-bonsai.jpg.asset.json";
-import corridor from "@/assets/images/corridor-planter.jpg.asset.json";
-import orchid from "@/assets/images/orchid-lobby.jpg.asset.json";
-import pinkWall from "@/assets/images/pink-flower-wall.jpg.asset.json";
-import pinkTree from "@/assets/images/pink-blossom-tree.jpg.asset.json";
-
+// Files sit in /public/images so Cloudflare Pages serves them directly.
 export const images = {
-  logo: logo.url,
-  hero: balcony.url,
-  storefront: storefront.url,
-  stairWide: stairWide.url,
-  stairBonsai: stairBonsai.url,
-  corridor: corridor.url,
-  orchid: orchid.url,
-  pinkWall: pinkWall.url,
-  pinkTree: pinkTree.url,
+  logo: "/images/logo.png",
+  hero: "/images/balcony-green-wall.jpg",
+  storefront: "/images/storefront-trees.jpg",
+  stairWide: "/images/stair-garden-wide.jpg",
+  stairBonsai: "/images/stair-bonsai.jpg",
+  corridor: "/images/corridor-planter.jpg",
+  orchid: "/images/orchid-lobby.jpg",
+  pinkWall: "/images/pink-flower-wall.jpg",
+  pinkTree: "/images/pink-blossom-tree.jpg",
 };
 
 export const contact = {
